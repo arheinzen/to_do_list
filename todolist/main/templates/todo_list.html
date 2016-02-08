@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+   
+   {% for todolist in todo_list %}
+   
+   <h3>{{ todolist.name }}</h3>
+   <h4>{{ todolist.date }}</h4>
+   <h4>{{ todolist.description }}</h4>
+   {{ todolist.status }}
+   
+    </br>
+   
+   {% endfor%}
+   
+    
+</body>
+</html>
